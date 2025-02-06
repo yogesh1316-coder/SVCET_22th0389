@@ -1,0 +1,117 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8d3dbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    background-color: #e78db3;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #073066;
+}
+
+/* Add Task Form */
+.add-task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.add-task-form input[type="text"] {
+    padding: 12px;
+    width: 75%;
+    border: 2px solid #221c1c;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.add-task-form input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #c122d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-task-form input[type="submit"]:hover {
+    background-color: #a414b8;
+    transform: scale(1.05);
+}
+
+/* Task List Styling */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Task Item Styling */
+.task-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Task Text */
+.task-item span {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Delete Link Styling */
+.delete-task {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.delete-task:hover {
+    color: #c0392b;
+}
+
+/* Empty Task List Styling */
+.task-list li {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e91f1f;
+}
